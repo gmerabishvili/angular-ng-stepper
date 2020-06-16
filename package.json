@@ -1,6 +1,6 @@
 {
   "name": "angular-ng-stepper",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Angular stepper",
   "keywords": [
     "angular",
@@ -29,7 +29,7 @@
     "type": "git",
     "url": "https://github.com/gmerabishvili/angular-ng-stepper"
   },
-  "homepage": "https://github.com/gmerabishvili/angular-ng-stepper",
+  "homepage": "https://gmerabishvili.github.io/angular-ng-stepper/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

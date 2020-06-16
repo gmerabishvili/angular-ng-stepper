@@ -1,5 +1,5 @@
 # Angular Stepper
-* See [Demo](https://gmerabishvili.github.io/angular-ng-autocomplete/) or try in [Stackblitz](https://stackblitz.com/edit/angular-ng-autocomplete)
+* See [Demo](https://gmerabishvili.github.io/angular-ng-stepper/) or try in [Stackblitz](https://stackblitz.com/edit/angular-ng-stepper)
 
 
 Table of contents
@@ -60,7 +60,7 @@ export class AppModule {}
 
 ```
 ### API
-Angular-ng-stepper uses Angular CDK API. You can refer for the full API documentation [here](https://material.angular.io/cdk/stepper/api).
+Angular-ng-stepper uses Angular CDK API. For the full documentation you can refer to [here](https://material.angular.io/cdk/stepper/api)
 
 ## Support Angular ng-stepper!
 If you do love angular-ng-stepper I would appreciate a donation :)
