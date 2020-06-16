@@ -1,0 +1,97 @@
+:host {
+  display: block;
+  overflow: hidden; /* Hide everything that doesn't fit the component */
+}
+
+.stepper-header {
+  .steps {
+    width: 100%;
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    margin: 0 auto;
+
+    .step {
+      text-align: center;
+      font-size: 1em;
+    }
+
+    ::ng-deep .step {
+      .step-bullet {
+        text-decoration: none;
+        height: 40px;
+        width: 40px;
+        background-color: #b3babe;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        cursor: pointer;
+        font-size: 1.3rem;
+        position: relative;
+        text-align: center;
+      }
+      .step-title {
+        position: absolute;
+        right: 0;
+        bottom: -5px;
+        left: 0;
+        margin: auto 0;
+        height: 0;
+      }
+      &.active {
+        .step-bullet {
+          background-color: #306bff;
+        }
+      }
+      &.completed {
+        .step-bullet {
+          background-color: #32e67f;
+        }
+      }
+      &.done {
+        .step-bullet {
+          background-color: #32e67f;
+        }
+      }
+    }
+  }
+}
+
+.stepper-body {
+  margin: 25px auto;
+  padding: 1rem;
+  .content {
+    &:not(.active) {
+      height: 0;
+      overflow: hidden;
+    }
+  }
+}
+
+/* Progress bar */
+.step {
+  position: relative;
+  width: 33.33%;
+}
+
+.step:after {
+  // Creating horizontal line
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #b3babe;
+  top: 50%;
+  left: -50%;
+  z-index: -1;
+}
+
+.step:first-child:after {
+  content: none;
+}
+
+.step.completed + .step:after {
+  background-color: #32e67f;
+}

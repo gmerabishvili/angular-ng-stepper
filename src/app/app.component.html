@@ -1,0 +1,39 @@
+<div class="main">
+  <div class="header">
+    <h1>Angular ng-stepper </h1>
+  </div>
+
+  <ng-stepper #cdkStepper [linear]="true">
+    <cdk-step [stepControl]="stepOne.stepOneForm" [optional]="false">
+      <ng-template cdkStepLabel>
+        <div class="step-bullet">1</div>
+        <div class="step-title">Personal Details <span class="required">*</span></div>
+      </ng-template>
+      <app-step-one #stepOne></app-step-one>
+    </cdk-step>
+
+    <cdk-step [stepControl]="stepTwo.stepTwoForm" [optional]="true">
+      <ng-template cdkStepLabel>
+        <div class="step-bullet">2</div>
+        <div class="step-title">Address</div>
+      </ng-template>
+      <app-step-two #stepTwo></app-step-two>
+    </cdk-step>
+
+    <cdk-step [stepControl]="stepThree.stepThreeForm" [optional]="false">
+      <ng-template cdkStepLabel>
+        <div class="step-bullet">3</div>
+        <div class="step-title">Payment Information <span class="required">*</span></div>
+      </ng-template>
+      <app-step-three #stepThree></app-step-three>
+    </cdk-step>
+
+    <cdk-step [stepControl]="stepFour.stepFourForm" [optional]="true" [state]="stepFour.state">
+      <ng-template cdkStepLabel>
+        <div class="step-bullet">4</div>
+        <div class="step-title">Contact Information</div>
+      </ng-template>
+      <app-step-four #stepFour></app-step-four>
+    </cdk-step>
+  </ng-stepper>
+</div>

@@ -1,0 +1,25 @@
+<div class="container">
+  <form [formGroup]="stepThreeForm"
+        (ngSubmit)="stepThreeSubmit()"
+        autocomplete="off"
+        novalidate
+        #formRef="ngForm">
+
+    <div class="input">
+      <label for="cardNumber">Card Number <span>*</span></label>
+      <input type="text" id="cardNumber" placeholder="Enter Card Number" formControlName="cardNumber"/>
+      <span class="error" *ngIf="stepThreeForm.controls['cardNumber'].hasError('required') && formRef.submitted">Card Number is a required field
+      </span>
+    </div>
+
+    <div class="buttons">
+      <div class="button">
+        <button class="button previous" cdkStepperPrevious>Previous</button>
+      </div>
+      <div class="button">
+        <button class="button" cdkStepperNext>Next</button>
+      </div>
+    </div>
+
+  </form>
+</div>

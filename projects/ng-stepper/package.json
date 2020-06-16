@@ -1,0 +1,41 @@
+{
+  "name": "angular-ng-stepper",
+  "version": "1.0.0",
+  "description": "Angular stepper",
+  "keywords": [
+    "angular",
+    "angular-ng-stepper",
+    "angular stepper",
+    "angular-stepper",
+    "angular wizard",
+    "stepper-component",
+    "wizard-component",
+    "ng-stepper",
+    "stepper",
+    "wizard",
+    "angular-6",
+    "angular-7",
+    "angular-8",
+    "angular-9",
+    "angular-9"
+  ],
+  "author": {
+    "name": "Giorgi Merabishvili",
+    "email": "gtmerabishvili@gmail.com",
+    "url": "https://www.linkedin.com/in/giorgi-merabishvili-3719a2121/"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gmerabishvili/angular-autocomplete"
+  },
+  "homepage": "https://gmerabishvili.github.io/angular-ng-autocomplete/",
+  "peerDependencies": {
+    "@angular/common": "^9.1.11",
+    "@angular/core": "^9.1.11",
+    "@angular/cdk": "^9.2.4"
+  },
+  "dependencies": {
+    "tslib": "^1.10.0"
+  }
+}

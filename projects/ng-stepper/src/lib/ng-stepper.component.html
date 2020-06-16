@@ -1,0 +1,28 @@
+<div class="stepper">
+  <div class="stepper-header">
+    <ol class="steps">
+      <ng-container *ngFor="let step of steps; let i = index;">
+        <li class="step" (click)="selectedIndex = i"
+            [ngClass]="{
+                active: selectedIndex === i,
+                completed: step.completed && i < selectedIndex,
+                done: step.state === 'done' && i === selectedIndex
+                }">
+          <ng-container [ngTemplateOutlet]="step.stepLabel.template">
+            <ng-content select=".step-bullet"></ng-content>
+            <ng-content select=".step-title"></ng-content>
+          </ng-container>
+        </li>
+      </ng-container>
+    </ol>
+  </div>
+  <div class="stepper-body">
+    <div class="content"
+         *ngFor="let step of _steps; let i = index"
+         [class.active]="selectedIndex === i"
+         [@stepTransition]="_getAnimationDirection(i)">
+      <ng-container [ngTemplateOutlet]="step.content"></ng-container>
+    </div>
+  </div>
+</div>
+

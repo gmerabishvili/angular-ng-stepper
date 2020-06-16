@@ -1,0 +1,60 @@
+/* You can add global styles to this file, and also import other style files */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 800px;
+  margin: 0 auto;
+  .input {
+    margin: 8px 0;
+  }
+  input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin-top: 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  label {
+    span {
+      color: #f82929;
+    }
+  }
+  .error {
+    color: #f82929;
+    font-size: 13px;
+    margin-top: 2px;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .button {
+    button {
+      background-color: #306bff;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: table;
+      margin: 5px auto;
+      font-size: 16px;
+      cursor: pointer;
+      &:hover {
+        background-color: darken(#306bff, 10%)
+      }
+    }
+    &.previous {
+      background-color: #4d525f;
+      &:hover {
+        background-color: darken(#4d525f, 10%)
+      }
+    }
+  }
+}
+

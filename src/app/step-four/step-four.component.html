@@ -1,0 +1,28 @@
+<div class="container">
+  <form [formGroup]="stepFourForm"
+        (ngSubmit)="stepFourSubmit()"
+        autocomplete="off"
+        novalidate
+        #formRef="ngForm">
+
+    <div class="input">
+      <label for="phoneNumber">Phone Number </label>
+      <input type="text" id="phoneNumber" placeholder="Enter Phone Number" formControlName="phoneNumber"/>
+    </div>
+
+    <div class="input">
+      <label for="email">Email </label>
+      <input type="text" id="email" placeholder="Enter Email" formControlName="email"/>
+    </div>
+
+    <div class="buttons">
+      <div class="button">
+        <button class="button previous" cdkStepperPrevious>Previous</button>
+      </div>
+      <div class="button">
+        <button class="button" cdkStepperNext>Save</button>
+      </div>
+    </div>
+  </form>
+</div>
+

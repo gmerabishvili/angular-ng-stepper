@@ -1,0 +1,27 @@
+<div class="container">
+  <form [formGroup]="stepOneForm"
+        (ngSubmit)="stepOneSubmit()"
+        autocomplete="off"
+        novalidate
+        #formRef="ngForm">
+
+    <div class="input">
+      <label for="fname">First name <span>*</span></label>
+      <input type="text" id="fname" placeholder="Enter First Name" formControlName="firstName"/>
+      <span class="error" *ngIf="stepOneForm.controls['firstName'].hasError('required') && formRef.submitted">First Name is a required field
+      </span>
+    </div>
+
+    <div class="input">
+      <label for="lname">Last name <span>*</span></label>
+      <input type="text" id="lname" placeholder="Enter Last Name" formControlName="lastName"/>
+      <span class="error" *ngIf="stepOneForm.controls['lastName'].hasError('required') && formRef.submitted">Last Name is a required field
+      </span>
+    </div>
+
+    <div class="button">
+      <button class="button" cdkStepperNext>Next</button>
+    </div>
+
+  </form>
+</div>

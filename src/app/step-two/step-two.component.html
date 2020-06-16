@@ -1,0 +1,28 @@
+<div class="container">
+  <form [formGroup]="stepTwoForm"
+        (ngSubmit)="stepTwoSubmit()"
+        autocomplete="off"
+        novalidate
+        #formRef="ngForm">
+
+    <div class="input">
+      <label for="city">City </label>
+      <input type="text" id="city" placeholder="Enter City" formControlName="city"/>
+    </div>
+
+    <div class="input">
+      <label for="country">Country </label>
+      <input type="text" id="country" placeholder="Enter Country" formControlName="country"/>
+    </div>
+
+    <div class="buttons">
+      <div class="button">
+        <button class="button previous" cdkStepperPrevious>Previous</button>
+      </div>
+      <div class="button">
+        <button class="button" cdkStepperNext>Next</button>
+      </div>
+    </div>
+  </form>
+</div>
+
