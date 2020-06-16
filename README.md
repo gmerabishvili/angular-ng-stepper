@@ -61,9 +61,7 @@ export class AppModule {}
 ```
 ### API
 Angular-ng-stepper uses Angular CDK API. You can refer for the full API documentation [here](https://material.angular.io/cdk/stepper/api).
-```
 
-```
 ## Support Angular ng-stepper!
 If you do love angular-ng-stepper I would appreciate a donation :)
 

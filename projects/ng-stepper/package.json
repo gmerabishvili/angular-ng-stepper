@@ -1,6 +1,6 @@
 {
   "name": "angular-ng-stepper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Angular stepper",
   "keywords": [
     "angular",
@@ -27,9 +27,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gmerabishvili/angular-autocomplete"
+    "url": "https://github.com/gmerabishvili/angular-ng-stepper"
   },
-  "homepage": "https://gmerabishvili.github.io/angular-ng-autocomplete/",
+  "homepage": "https://github.com/gmerabishvili/angular-ng-stepper",
   "peerDependencies": {
     "@angular/common": "^9.1.11",
     "@angular/core": "^9.1.11",
