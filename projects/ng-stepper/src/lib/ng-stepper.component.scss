@@ -18,19 +18,20 @@
 
     ::ng-deep .step {
       .step-bullet {
-        text-decoration: none;
+        position: relative;
+        z-index: 1;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
         height: 40px;
         width: 40px;
         background-color: #b3babe;
         border-radius: 50%;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
         color: #fff;
-        cursor: pointer;
         font-size: 1.3rem;
-        position: relative;
         text-align: center;
+        text-decoration: none;
+        cursor: pointer;
       }
       .step-title {
         position: absolute;
@@ -85,7 +86,6 @@
   background-color: #b3babe;
   top: 50%;
   left: -50%;
-  z-index: -1;
 }
 
 .step:first-child:after {
