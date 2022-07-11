@@ -1,4 +1,4 @@
-import {Component, HostListener, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {CdkStepper, STEPPER_GLOBAL_OPTIONS} from '@angular/cdk/stepper';
 import {animate, state, style, transition, trigger} from '@angular/animations';
 
@@ -20,14 +20,5 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
 })
 export class NgStepperComponent extends CdkStepper implements OnInit {
   ngOnInit(): void {
-  }
-
-  @HostListener('document:keydown', ['$event'])
-  handleKeyboardEvent(event: KeyboardEvent): void {
-    if (event.key === 'ArrowLeft') {
-      this.previous();
-    } else if (event.key === 'ArrowRight') {
-      this.next();
-    }
   }
 }
