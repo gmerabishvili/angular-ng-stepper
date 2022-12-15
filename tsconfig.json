@@ -10,7 +10,7 @@
     "module": "esnext",
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es2015",
+    "target": "ES2022",
     "lib": [
       "es2018",
       "dom"
@@ -20,9 +20,11 @@
         "dist/ng-stepper/ng-stepper",
         "dist/ng-stepper"
       ]
-    }
+    },
+    "useDefineForClassFields": false
   },
   "angularCompilerOptions": {
+    "compilationMode": "partial",
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true
   }

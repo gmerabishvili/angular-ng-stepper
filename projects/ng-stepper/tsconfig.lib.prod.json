@@ -5,6 +5,5 @@
   },
   "angularCompilerOptions": {
     "compilationMode": "partial",
-    "enableIvy": false
   }
 }
